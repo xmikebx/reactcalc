@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+@font-face {
+  font-family: 'sevensegment';
+  font-style: normal;
+  font-weight: 400;
+  src: local('sevensegment'), local('sevensegment-Regular'), url(./assets/sevensegment.woff) format('woff');
+}
+
+body {
+  background-color: rgb(187, 219, 251);
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dispF {
+  font-family: "sevensegment", Arial, Helvetica, sans-serif;  
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.centre {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.calcCont {
+  background-color: rgb(187, 219, 251);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 340px;
+  height: 500px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(155, 204, 253);
+  width: 85%;
+  height: 60px;
+  box-shadow: inset 0 0 2px 2px hsla(0,0%,0%,.2),
+  inset 0 0 2px 4px hsla(0,0%,0%,.2),
+  inset 0 0 2px 6px hsla(0,0%,0%,.2),
+  inset 0 0px 2px 4px hsla(0,0%,0%,.5),
+  inset 0 -30px 30px hsla(0,0%,0%,.2),
+  0 -4px 8px 4px hsla(0,0%,0%,.5),
+  0 1px 2px 0px hsla(0,0%,100%,.25),
+  0 0px 0px 8px rgb(187, 219, 251);
+margin-bottom: 10px;
+}
+
+.myInput {
+  background: none;
+  width: 100%; 
+  color: rgba(0, 0, 0, 0.816);
+  text-align: right;
+  border: 0px;
+  outline: none;
+  padding: 10px;
+}
+
+.myInput::placeholder {
+  color: rgba(0, 0, 0, 0.559);
+}
+
+.myInput:active {
+  border: 0px;
+}
+
+.blink {
+  animation: blink 2s ease-in-out;
+  animation-iteration-count: 2;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.buttonCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 385px;
+  padding: 5px;
+}
+
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  margin: 15px;
+  background-color: rgba(72, 69, 53, 0.696);
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(224, 228, 231);
+
+
+  box-shadow: inset 0 0 2px 2px hsla(0,0%,0%,.2),
+  inset 0 0 2px 4px hsla(0,0%,0%,.2),
+  inset 0 0 2px 6px hsla(0,0%,0%,.2),
+  inset 0 0px 2px 4px hsla(0,0%,0%,.5),
+  inset 0 -30px 30px hsla(0,0%,0%,.2),
+  0 -4px 8px 4px hsla(0,0%,0%,.5),
+  0 1px 2px 8px hsla(0,0%,100%,.25),
+  0 0px 0px 8px rgb(187, 219, 251);
+}
+
+button:active {
+  box-shadow: inset 0 0 2px 2px hsla(0,0%,0%,.2),
+  inset 0 0 2px 4px hsla(0,0%,0%,.2),
+  inset 0 0 2px 6px hsla(0,0%,0%,.2),
+  inset 0 0 1px 7px hsla(0,0%,0%,.5),
+  inset 0 5px 15px 7px hsla(0,0%,0%,.15),
+  inset 0 -4px 2px 3px hsla(0,0%,0%,.5),
+  inset 0 1px 1px 7px hsla(0,0%,100%,.25),
+  inset 0 -30px 30px hsla(0,0%,0%,.1),
+  inset 0 30px 30px hsla(0,0%,0%,.2),
+  0 -4px 8px 4px hsla(0,0%,0%,.5),
+  0 1px 2px 8px hsla(0,0%,100%,.25),
+  0 0px 0px 8px rgb(187, 219, 251);
+}
+
+button:nth-child(-n+2) {
+  background-color: rgba(210, 109, 27, 0.696);
+}
+
+button:nth-child(4n+8) {
+  background-color: rgba(27, 210, 45, 0.696);
+}
+
+button:nth-child(3) {
+  background-color: rgba(27, 210, 45, 0.696);
+}
+
+button:nth-child(4) {
+  background-color: rgba(210, 27, 27, 0.696);
+}
+
+button:nth-last-child(2) {
+  background-color: rgba(27, 210, 45, 0.696);
+}
+
+button:nth-child(12) {
+  padding-top: 10px;
+}
+
+button:nth-child(18) {
+  padding-bottom: 10px;
+}
